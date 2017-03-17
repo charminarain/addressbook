@@ -5,7 +5,7 @@
     <groupId>com.edurekademo.tutorial</groupId>
     <artifactId>addressbook</artifactId>
     <packaging>war</packaging>
-    <version>2.0.6</version>
+    <version>2.0.7-SNAPSHOT</version>
     <name>Vaadin Addressbook example</name>
 
     <properties>
@@ -58,27 +58,27 @@
         <dependency>
             <groupId>com.vaadin</groupId>
             <artifactId>vaadin-compatibility-server</artifactId>
-            <version>2.0.6</version>
+            <version>2.0.7-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>com.vaadin</groupId>
             <artifactId>vaadin-compatibility-shared</artifactId>
-            <version>2.0.6</version>
+            <version>2.0.7-SNAPSHOT</version>
         </dependency>
          <dependency>
             <groupId>com.vaadin</groupId>
             <artifactId>vaadin-compatibility-client-compiled</artifactId>
-            <version>2.0.6</version>
+            <version>2.0.7-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>com.vaadin</groupId>
             <artifactId>vaadin-themes</artifactId>
-            <version>2.0.6</version>
+            <version>2.0.7-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
-            <version>2.0.6</version>
+            <version>2.0.7-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
         <!-- The huge set of awesome Java libraries are available as such 
@@ -87,7 +87,7 @@
         <dependency>
             <groupId>commons-beanutils</groupId>
             <artifactId>commons-beanutils</artifactId>
-            <version>2.0.6</version>
+            <version>2.0.7-SNAPSHOT</version>
             <type>jar</type>
         </dependency>
 		
@@ -95,29 +95,29 @@
 		<dependency>
 	<groupId>log4j</groupId>
 	<artifactId>log4j</artifactId>
-	<version>2.0.6</version>
+	<version>2.0.7-SNAPSHOT</version>
 </dependency>
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
-			<version>2.0.6</version>
+			<version>2.0.7-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-simple</artifactId>
-			<version>2.0.6</version>
+			<version>2.0.7-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-log4j12</artifactId>
-			<version>2.0.6</version>
+			<version>2.0.7-SNAPSHOT</version>
 		</dependency>
 
 				<!-- TESTING -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>2.0.6</version>
+			<version>2.0.7-SNAPSHOT</version>
 			<scope>test</scope>
 		</dependency>
 
@@ -126,32 +126,32 @@
 		<dependency>
 			<groupId>commons-httpclient</groupId>
 			<artifactId>commons-httpclient</artifactId>
-			<version>2.0.6</version>
+			<version>2.0.7-SNAPSHOT</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-lang3</artifactId>
-			<version>2.0.6</version>
+			<version>2.0.7-SNAPSHOT</version>
 		</dependency>
 
 		<!-- JSON -->
 		<dependency>
 			<groupId>org.json</groupId>
 			<artifactId>json</artifactId>
-			<version>2.0.6</version>
+			<version>2.0.7-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>org.codehaus.jackson</groupId>
 			<artifactId>jackson-jaxrs</artifactId>
-			<version>2.0.6</version>
+			<version>2.0.7-SNAPSHOT</version>
 		</dependency>
 
 		<!-- XML -->
 		<dependency>
 			<groupId>com.sun.xml.security</groupId>
 			<artifactId>xml-security-impl</artifactId>
-			<version>2.0.6</version>
+			<version>2.0.7-SNAPSHOT</version>
 		</dependency>
 
 
@@ -162,7 +162,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>2.0.6</version>
+                <version>2.0.7-SNAPSHOT</version>
                 <configuration>
                     <source>1.8</source>
                     <target>1.8</target>
@@ -171,13 +171,13 @@
             <plugin>
                 <groupId>org.eclipse.jetty</groupId>
                 <artifactId>jetty-maven-plugin</artifactId>
-                <version>2.0.6</version>
+                <version>2.0.7-SNAPSHOT</version>
             </plugin>
 			
 						<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
-				<version>2.0.6</version>
+				<version>2.0.7-SNAPSHOT</version>
 				<configuration>
 					<parallel>methods</parallel>
 					<threadCount>10</threadCount>
@@ -202,7 +202,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-report-plugin</artifactId>
-        <version>2.0.6</version>
+        <version>2.0.7-SNAPSHOT</version>
       </plugin>
     </plugins>
   </reporting>
@@ -239,7 +239,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-pmd-plugin</artifactId>
-                        <version>2.0.6</version>
+                        <version>2.0.7-SNAPSHOT</version>
                         <configuration>
                             <targetJdk>1.8</targetJdk>
                             <aggregate>true</aggregate>
@@ -255,7 +255,7 @@
                     <!-- FINDBUGS -->
                     <plugin>
                         <artifactId>findbugs-maven-plugin</artifactId>
-                        <version>2.0.6</version>
+                        <version>2.0.7-SNAPSHOT</version>
                         <configuration>
                             <effort>Max</effort>
                             <xmlOutput>true</xmlOutput>
@@ -274,7 +274,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-enforcer-plugin</artifactId>
-                        <version>2.0.6</version>
+                        <version>2.0.7-SNAPSHOT</version>
                         <executions>
                             <execution>
                                 <id>enforce-versions</id>
@@ -284,7 +284,7 @@
                                 <configuration>
                                     <rules>
                                         <requireMavenVersion>
-                                            <version>2.0.6</version>
+                                            <version>2.0.7-SNAPSHOT</version>
                                         </requireMavenVersion>
                                     </rules>
                                 </configuration>
@@ -294,22 +294,22 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-site-plugin</artifactId>
-                        <version>2.0.6</version>
+                        <version>2.0.7-SNAPSHOT</version>
                         <configuration>
                             <reportPlugins>
                                 <plugin>
                                     <artifactId>maven-project-info-reports-plugin</artifactId>
-                                    <version>2.0.6</version>
+                                    <version>2.0.7-SNAPSHOT</version>
                                 </plugin>
                                 <plugin>
                                     <groupId>org.jacoco</groupId>
                                     <artifactId>jacoco-maven-plugin</artifactId>
-                                    <version>2.0.6</version>
+                                    <version>2.0.7-SNAPSHOT</version>
                                 </plugin>
                                 <plugin>
                                     <groupId>org.apache.maven.plugins</groupId>
                                     <artifactId>maven-checkstyle-plugin</artifactId>
-                                    <version>2.0.6</version>
+                                    <version>2.0.7-SNAPSHOT</version>
                                     <!--<configuration>-->
                                     <!--<configLocation>gol-checkstyle.xml</configLocation>-->
                                     <!--</configuration>-->
@@ -317,7 +317,7 @@
                                 <plugin>
                                     <groupId>org.apache.maven.plugins</groupId>
                                     <artifactId>maven-pmd-plugin</artifactId>
-                                    <version>2.0.6</version>
+                                    <version>2.0.7-SNAPSHOT</version>
                                     <configuration>
                                         <targetJdk>1.8</targetJdk>
                                         <aggregate>true</aggregate>
@@ -333,7 +333,7 @@
                                 <plugin>
                                     <groupId>org.codehaus.mojo</groupId>
                                     <artifactId>findbugs-maven-plugin</artifactId>
-                                    <version>2.0.6</version>
+                                    <version>2.0.7-SNAPSHOT</version>
                                     <configuration>
                                         <effort>Max</effort>
                                         <xmlOutput>true</xmlOutput>
@@ -341,7 +341,7 @@
                                 </plugin>
                                 <plugin>
                                     <artifactId>maven-javadoc-plugin</artifactId>
-                                    <version>2.0.6</version>
+                                    <version>2.0.7-SNAPSHOT</version>
                                     <configuration>
                                         <source>1.8</source>
                                         <doclet>
@@ -350,7 +350,7 @@
                                         <docletArtifact>
                                             <groupId>gr.spinellis</groupId>
                                             <artifactId>UmlGraph</artifactId>
-                                            <version>2.0.6</version>
+                                            <version>2.0.7-SNAPSHOT</version>
                                         </docletArtifact>
                                         <additionalparam>
                                             -inferrel -inferdep -hide java.* -collpackages
@@ -362,7 +362,7 @@
                                 <plugin>
                                     <groupId>org.apache.maven.plugins</groupId>
                                     <artifactId>maven-jxr-plugin</artifactId>
-                                    <version>2.0.6</version>
+                                    <version>2.0.7-SNAPSHOT</version>
                                 </plugin>
                             </reportPlugins>
                         </configuration>
@@ -370,7 +370,7 @@
                             <dependency>
                                 <groupId>com.edurekademo.tutorial</groupId>
                                 <artifactId>addressbook</artifactId>
-                                <version>2.0.6</version>
+                                <version>2.0.7-SNAPSHOT</version>
                             </dependency>
                         </dependencies>
                     </plugin>
@@ -384,7 +384,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-enforcer-plugin</artifactId>
-                        <version>2.0.6</version>
+                        <version>2.0.7-SNAPSHOT</version>
                         <executions>
                             <execution>
                                 <id>enforce-versions</id>
@@ -394,7 +394,7 @@
                                 <configuration>
                                     <rules>
                                         <requireMavenVersion>
-                                            <version>2.0.6</version>
+                                            <version>2.0.7-SNAPSHOT</version>
                                         </requireMavenVersion>
                                     </rules>
                                 </configuration>
@@ -404,12 +404,12 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-site-plugin</artifactId>
-                        <version>2.0.6</version>
+                        <version>2.0.7-SNAPSHOT</version>
                         <dependencies>
                             <dependency>
                                 <groupId>com.edurekademo.tutorial</groupId>
                                 <artifactId>addressbook</artifactId>
-                                <version>2.0.6</version>
+                                <version>2.0.7-SNAPSHOT</version>
                             </dependency>
                         </dependencies>
                     </plugin>
@@ -420,7 +420,7 @@
                     <plugin>
                         <groupId>org.codehaus.mojo</groupId>
                         <artifactId>cobertura-maven-plugin</artifactId>
-                        <version>2.0.6</version>
+                        <version>2.0.7-SNAPSHOT</version>
                         <configuration>
                             <formats>
                                 <format>html</format>
@@ -431,7 +431,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-pmd-plugin</artifactId>
-                        <version>2.0.6</version>
+                        <version>2.0.7-SNAPSHOT</version>
                         <configuration>
                             <targetJdk>1.8</targetJdk>
                             <aggregate>true</aggregate>
@@ -448,7 +448,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-checkstyle-plugin</artifactId>
-                        <version>2.0.6</version>
+                        <version>2.0.7-SNAPSHOT</version>
                         <configuration>
                             <configLocation>addressbook-build/checkstyle.xml</configLocation>
                         </configuration>
@@ -456,7 +456,7 @@
                     <plugin>
                         <groupId>org.codehaus.mojo</groupId>
                         <artifactId>findbugs-maven-plugin</artifactId>
-                        <version>2.0.6</version>
+                        <version>2.0.7-SNAPSHOT</version>
                         <configuration>
                             <effort>Max</effort>
                             <xmlOutput>true</xmlOutput>
@@ -464,7 +464,7 @@
                     </plugin>
                     <plugin>
                         <artifactId>maven-javadoc-plugin</artifactId>
-                        <version>2.0.6</version>
+                        <version>2.0.7-SNAPSHOT</version>
                         <configuration>
                             <source>1.8</source>
                             <doclet>
@@ -473,7 +473,7 @@
                             <docletArtifact>
                                 <groupId>gr.spinellis</groupId>
                                 <artifactId>UmlGraph</artifactId>
-                                <version>2.0.6</version>
+                                <version>2.0.7-SNAPSHOT</version>
                             </docletArtifact>
                             <additionalparam>
                                 -inferrel -inferdep -hide java.* -collpackages
@@ -485,7 +485,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-jxr-plugin</artifactId>
-                        <version>2.0.6</version>
+                        <version>2.0.7-SNAPSHOT</version>
                     </plugin>
                 </plugins>
             </reporting>
