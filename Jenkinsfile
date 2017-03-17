@@ -6,6 +6,7 @@ node {
       git 'https://github.com/sachingupta771/addressbook.git'
       // Get the Maven tool.
       // ** NOTE: This 'M3' Maven tool must be configured
+<<<<<<< HEAD
       // **       in the global configuration.
       mvnHome = tool 'LOCAL_MAVEN'
       version='2.3.5'
@@ -14,10 +15,21 @@ node {
       // Run the maven build
       if (isUnix()) {
          sh "'${mvnHome}/bin/mvn' -Dmaven.test.failure.ignore test -Pfunctional-test -DSkipUTs=true -DskipTests=true"
+=======
+      // **       in the global configuration.           
+      mvnHome = tool 'LOCAL_MAVEN'
+      version='2.3.5'
+   }
+   stage('Build') {
+      // Run the maven build
+      if (isUnix()) {
+         sh "'${mvnHome}/bin/mvn' -Dmaven.test.failure.ignore clean package"
+>>>>>>> develop
       } else {
          bat(/"${mvnHome}\bin\mvn" -Dmaven.test.failure.ignore clean package/)
       }
    }
+<<<<<<< HEAD
 
    stage('COVERAGE') {
       // Run the maven build
@@ -51,4 +63,13 @@ stage('Publish Publish') {
 publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'addressbook_main/target/site/cobertura/', reportFiles: 'index.html', reportName: 'HTML Report'])
 }
 
+=======
+   stage('Results') {
+      junit '**/target/surefire-reports/TEST-*.xml'
+
+   }
+   stage('Publish') {
+     nexusPublisher nexusInstanceId:'NEXUS1', nexusRepositoryId: 'QA_Release', packages: [[$class: 'MavenPackage', mavenAssetList: [[classifier: '', extension: '', filePath: 'addressbook_main/target/addressbook.war']], mavenCoordinate: [artifactId: 'addressbook_main', groupId: 'com.edurekademo.tutorial', packaging: 'war', version: '2.3.0']]]
+   }
+>>>>>>> develop
 }
